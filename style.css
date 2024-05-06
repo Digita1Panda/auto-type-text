@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background: #252525;
+    color: #f2f2f2;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.js {
+    color: rgb(3, 218, 218);
+    font-weight: bold;
+}
+
+.typed-text {
+    color: rgb(255, 35, 138);
+    font-weight: bold;
+}
+
+.cursor {
+    color: #f2f2f2;
+    animation: blink 1000ms linear infinite;
+}
+
+.cursor.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+}
